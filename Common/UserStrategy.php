@@ -9,12 +9,11 @@
 namespace Common;
 
 /**
+ * Description of UserStrategy
  *
  * @author niro
  */
-interface IDatabase{
-    function connect($host, $user, $passwd, $dbname);
-    function query($sql);
-    function close();
+interface UserStrategy {
+    function showAd();
+    function showCategory();
 }
-

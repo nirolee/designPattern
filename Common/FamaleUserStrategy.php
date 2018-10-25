@@ -9,12 +9,15 @@
 namespace Common;
 
 /**
+ * Description of FamaleUserStrategy
  *
  * @author niro
  */
-interface IDatabase{
-    function connect($host, $user, $passwd, $dbname);
-    function query($sql);
-    function close();
+class FamaleUserStrategy implements UserStrategy{
+    function showAd() {
+        echo "2018女装";
+    }
+    function showCategory() {
+        echo "女装";
+    }
 }
-

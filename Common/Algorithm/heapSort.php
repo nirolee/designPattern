@@ -6,15 +6,15 @@
  * and open the template in the editor.
  */
 
-namespace Common;
+namespace Common\Algorithm;
 
 /**
+ * Description of heapSort
  *
  * @author niro
  */
-interface IDatabase{
-    function connect($host, $user, $passwd, $dbname);
-    function query($sql);
-    function close();
+class heapSort {
+    function run($array){
+        
+    }
 }
-

@@ -9,12 +9,15 @@
 namespace Common;
 
 /**
+ * Description of MaleUserstrategy
  *
  * @author niro
  */
-interface IDatabase{
-    function connect($host, $user, $passwd, $dbname);
-    function query($sql);
-    function close();
+class MaleUserStrategy implements UserStrategy{
+    function showAd() {
+        echo 'macbook';
+    }
+    function showCategory() {
+        echo '计算机工具';
+    }
 }
-
